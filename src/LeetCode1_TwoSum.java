@@ -20,7 +20,6 @@ public class LeetCode1_TwoSum {
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i])) {
                 int complement = target - nums[i];
-//                System.out.println(map.get(complement));
                 return new int[]{map.get(complement), i};
 
             }
